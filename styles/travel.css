@@ -868,7 +868,7 @@ select {
 
 /* mobile Responsive */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .container {
     max-width: 335px;
     margin-top: 19px;
@@ -878,24 +878,20 @@ select {
   }
 
   .nav-section-container {
-    display: none;
-  }
-
-  .mobile-nav-container {
-    display: block;
-  }
-
-  .mobile-nav-container {
     display: flex;
-    justify-content: space-between;
-    font-size: 30px;
-    align-items: flex-end;
+    flex-direction: column;
   }
 
+  .menu-bar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   .nav-title {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin-bottom: 20px;
   }
 
   .nav-title .title {
@@ -913,6 +909,7 @@ select {
   .banner-section .container {
     width: 335px;
     height: auto;
+    padding: 10px;
   }
 
   .banner-section .container .banner-section-bg {
@@ -982,11 +979,13 @@ select {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px;
   }
 
   .popular-tour-content {
     width: 100%;
     margin-bottom: 0px;
+    padding: 10px;
   }
 
   .popular-tour-images {
@@ -995,7 +994,7 @@ select {
   }
 
   .popular-tour-images img {
-    width: 335px;
+    width: 100%;
     height: auto;
     margin-top: 24px;
   }
@@ -1077,13 +1076,13 @@ select {
   }
 
   .img1 .dd-satorini-container {
-    margin: 0px;
+    margin: 24px;
   }
   .img2 .dd-satorini-container {
-    margin: 0px;
+    margin: 24px;
   }
   .img3 .dd-satorini-container {
-    margin: 0px;
+    margin: 24px;
   }
 
   .image-row {
@@ -1166,25 +1165,5 @@ select {
   }
 }
 
-/* tablet */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .mobile-nav-container {
-    display: none;
-  }
-}
-
-/* mini laptop */
-
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-  .mobile-nav-container {
-    display: none;
-  }
-}
-
-/* laptop */
-
-@media screen and (min-width: 1024px) {
-  .mobile-nav-container {
-    display: none;
-  }
+@media screen and (min-width: 576px) and (max-width: 992px) {
 }
